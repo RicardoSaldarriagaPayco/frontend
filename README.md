@@ -1,29 +1,17 @@
-# tiendanube-app-standalone-template-react
+# Nuvemshop react frontend template for External Apps
 
-# React + TypeScript + Vite
+![License](https://img.shields.io/badge/license-MIT-blue)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the repository for the interface of Nuvemshop initial app templates using React. This repository serves as a submodule for specific app templates, providing a starting point for development.
 
-Currently, two official plugins are available:
+## Developer Resources
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Here you will find essential resources to kickstart Nuvemshop app development:
 
-## Expanding the ESLint configuration
+- [Introduction to Nuvemshop Apps](https://tiendanube.github.io/devhub-apps/docs/getting-started)
+- [App Authentication](https://tiendanube.github.io/devhub-apps/docs/applications/overview#autenticando-seu-aplicativo)
+- [Nuvemshop API Library Documentation](https://tiendanube.github.io/devhub-apps/docs/developer-tools/nuvemshop-api/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## License
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+This repository is available as open-source under the terms of the [MIT License](https://opensource.org/license/mit/). Be sure to review and comply with the license guidelines when using this code.
