@@ -12,6 +12,28 @@ Here you will find essential resources to kickstart Nuvemshop app development:
 - [App Authentication](https://tiendanube.github.io/devhub-apps/docs/applications/overview#autenticando-seu-aplicativo)
 - [Nuvemshop API Library Documentation](https://tiendanube.github.io/devhub-apps/docs/developer-tools/nuvemshop-api/)
 
+## Configuring the project
+
+- When running the frontend application you will find a step-by-step guide for the integration of your application to be carried out successfully.
+
+  ![Configuration step 1](./docs/config-step-1.png "configuration step 1")
+
+- To proceed we need to configure the environment variables correctly as requested.
+
+  ![Configuration step 2](./docs/config-step-2.png "configuration step 2")
+
+  You must enter the name of your application, the client ID of your application which can be found in the Partner Portal in the application details section and finally the API address field which is the address where your API is running .
+
+- Now just follow the steps below and your authentication will be successful.
+
+  ![Configuration step 3](./docs/config-step-3.png "configuration step 3")
+
+- Your application is now successfully integrated and you can now continue developing your app.
+
+  ![Configuration step 4](./docs/config-step-4.png "configuration step 4")
+
+  ![Configuration step 5](./docs/config-step-5.png "configuration step 5")
+
 ## License
 
 This repository is available as open-source under the terms of the [MIT License](https://opensource.org/license/mit/). Be sure to review and comply with the license guidelines when using this code.

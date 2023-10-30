@@ -35,7 +35,9 @@ const Instalation: React.FC = () => {
             <Accordion.Body>
               <Text fontSize="highlight" lineHeight="highlight">
                 <Trans
-                  i18nKey={t("tutorial.second")}
+                  i18nKey={t("tutorial.second", {
+                    appUrl: window.location.host,
+                  })}
                   components={[
                     <Text as="span" fontWeight="bold" children="" />,
                   ]}

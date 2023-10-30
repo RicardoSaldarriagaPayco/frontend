@@ -19,7 +19,7 @@ export default {
           "Este aplicativo de exemplo inclui nosso <0>Design System Nimbus</0> e a integração com a <1>API da Tiendanube/Nuvemshop</1> para facilitar o desenvolvimento de novos aplicativos para nosso ecossistema.",
         link: {
           text: "Conheça mais sobre como criar seu aplicativo",
-          url: "https://atendimento.nuvemshop.com.br/pt_BR/parceiros-tecnologicos/como-fazer-um-aplicativo-para-a-loja-de-aplicativos-nuvemshop#nome-do-aplicativo",
+          url: "https://dev.nuvemshop.com.br/docs/applications/overview",
         },
       },
       "second-card": {
@@ -35,7 +35,7 @@ export default {
       first:
         "Acesse <0>Dados básicos</0> em detalhes do aplicativo, no portal de parceiros. No campo URL de redirecionamento, copie e cole o endereço",
       second:
-        "No campo URL de redirecionamento, copie e cole o endereço <0>http://localhost:8000</0>",
+        "No campo URL de redirecionamento, copie e cole o endereço <0>http://{{appUrl}}</0>",
       third:
         "Copie este final da URL <0>/admin/apps/{{clientId}}/authorize</0> e cole no final da URL da loja que você vai instalar o aplicativo",
       fourth:
