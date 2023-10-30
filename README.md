@@ -8,9 +8,11 @@ Welcome to the repository for the interface of Nuvemshop initial app templates u
 
 Here you will find essential resources to kickstart Nuvemshop app development:
 
-- [Introduction to Nuvemshop Apps](https://tiendanube.github.io/devhub-apps/docs/getting-started)
-- [App Authentication](https://tiendanube.github.io/devhub-apps/docs/applications/overview#autenticando-seu-aplicativo)
-- [Nuvemshop API Library Documentation](https://tiendanube.github.io/devhub-apps/docs/developer-tools/nuvemshop-api/)
+- [Introduction to Nuvemshop Apps](https://dev.nuvemshop.com.br/en/docs/getting-started)
+- [App Authentication](https://dev.nuvemshop.com.br/en/docs/applications/overview#authenticating-your-application)
+- [Nexo](https://dev.nuvemshop.com.br/en/docs/developer-tools/nexo)
+- [Nimbus](https://dev.nuvemshop.com.br/en/docs/developer-tools/nimbus)
+- [Nuvemshop API Library Documentation](https://dev.nuvemshop.com.br/en/docs/developer-tools/nuvemshop-api/)
 
 ## Configuring the project
 
