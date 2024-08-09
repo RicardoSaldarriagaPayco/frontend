@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useToast } from "@nimbus-ds/components";
 
-import { useAuth, useConfig, useFetch } from "@/hooks";
+import {useAuth, useConfig, useFetch } from "../";
 import { IAuth } from "../useAuth/useAuth.types";
 
 const useAuthentication = () => {
@@ -21,6 +21,7 @@ const useAuthentication = () => {
       request<IAuth>({
         url: code ? `/auth/install?code=${code}` : "/auth/login",
         method: code ? "GET" : "POST",
+        data: config
       })
         .then((response) => {
           if (response.content) {

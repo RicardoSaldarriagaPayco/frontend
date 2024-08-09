@@ -1,4 +1,6 @@
 export const languages = {
-  'pt-BR': 'PT',
-  'es-AR': 'ES'
+  'es-AR': 'ES',
+  'en': 'EN',
+  //'pt-BR': 'PT'
+
 } as { [key: string]: string };

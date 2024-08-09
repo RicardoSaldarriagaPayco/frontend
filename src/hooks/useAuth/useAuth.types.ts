@@ -3,4 +3,5 @@ export interface IAuth {
   token_type: string;
   scope: string;
   user_id: number;
+  shop: string;
 }

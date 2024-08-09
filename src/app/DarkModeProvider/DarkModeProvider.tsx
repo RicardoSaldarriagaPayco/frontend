@@ -20,7 +20,7 @@ interface IDarkModeProvider {
 }
 
 export const DarkModeProvider: React.FC<IDarkModeProvider> = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [mounted, setMounted] = useState(false);
 
   const toggleDarkMode = useCallback(

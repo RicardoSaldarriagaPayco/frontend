@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Box, Title, Text, Button } from "@nimbus-ds/components";
 import { CogIcon } from "@nimbus-ds/icons";
-import { useAuthentication } from "@/hooks";
+import { useAuthentication } from "../../hooks";
 import IMG from "./empty-manager-tablet.png";
 
 const Tutorial: React.FC = () => {
@@ -33,13 +33,13 @@ const Tutorial: React.FC = () => {
           maxWidth={{ md: "100%", lg: "35%" }}
         >
           <Title textAlign="left">
-            Bem-vindo ao processo de configuração do aplicativo
+          Bienvenido al proceso de configuración de la aplicación.
           </Title>
           <Text textAlign="left" fontSize="highlight" lineHeight="highlight">
-            Precisamos completar algumas informações para começar o
-            desenvolvimento, fique tranquilo vamos te guiar pelos passos.
+          Necesitamos completar algunos datos para iniciar el
+          desarrollo, no te preocupes, te guiaremos a través de los pasos.
           </Text>
-          <Button as={Link} to="/configuration" appearance="primary">
+          <Button as={Link} to="/configuration" appearance="neutral">
             <CogIcon />
             Configurar
           </Button>

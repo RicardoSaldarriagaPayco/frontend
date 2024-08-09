@@ -42,6 +42,8 @@ export default {
         "Clique no botão <0>Aceitar e começar a usar</0> para instalar o aplicativo",
       fifth:
         "Após o redirecionamento para Template de aplicativo, a requisição será executada e o processo de autenticação estará concluído",
+      sixth:
+        "ePayco é uma empresa de tecnologia que fornece uma solução de pagamento e Coleções abrangentes para pessoas, empresas e instituições, resolvendo todas as suas necessidades de vendas e coletar pela internet com melhor gestão e experiência para seus clientes."
     },
     products: {
       title: "Produtos da Loja",
