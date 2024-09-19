@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Box, Button, Card, useToast, Spinner } from "@nimbus-ds/components";
+import { Box, Button, Card, useToast, Spinner, Select } from "@nimbus-ds/components";
 import { FormField } from "@nimbus-ds/patterns";
 
 import { IConfig } from "../../../../hooks/useConfig";
@@ -13,7 +13,8 @@ const apiURL = import.meta.env.VITE_API_URL;
 const initialConfig = {
   clientId: "7882",
   appName: "ePayco",
-  apiURL: apiURL
+  apiURL: apiURL,
+  modo: "produccion"
 }
 
 const Configuration: React.FC = () => {
@@ -31,7 +32,7 @@ const Configuration: React.FC = () => {
 
   useEffect(() => onAuthentication(), []);
 
-  const onChange = (evt: React.ChangeEvent<HTMLInputElement>) => {
+  const onChange = (evt: React.ChangeEvent<HTMLInputElement | HTMLSelectElement >) => {
     setForm((prevState: IConfig) => ({
       ...prevState,
       [evt.target.name]: evt.target.value.trim(),
@@ -71,11 +72,11 @@ const Configuration: React.FC = () => {
   };
 
   const onSetUp = () => {
-    if (config) {
+    if (form) {
       request<IAuth>({
         url: `${apiURL}/auth/login`,
         method: "POST",
-        data: {config}
+        data: {form}
       })
         .then((response) => {
           if (response.content) {
@@ -146,6 +147,12 @@ const Configuration: React.FC = () => {
             value={form?.pKey ?? ""}
             required
           />
+          <Select appearance="neutral" id="modo" name="modo" onChange={onChange} value={form?.modo ?? "produccion"}>
+            <Select.Group label="Modo">
+              <Select.Option label="Pruebas" value="test" />
+              <Select.Option label="Producción" value="produccion" />
+            </Select.Group>
+          </Select>
           <Button type="submit" appearance="neutral">
           <Trans
             i18nKey={t("tutorial.save")}

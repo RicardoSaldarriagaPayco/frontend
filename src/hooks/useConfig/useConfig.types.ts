@@ -9,4 +9,6 @@ export interface IConfig {
   user_id?: number;
   access_token?: string;
   shop?: string;
+  test: string;
+  modo: string;
 }

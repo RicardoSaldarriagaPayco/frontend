@@ -35,6 +35,7 @@ export const DarkModeProvider: React.FC<IDarkModeProvider> = ({ children }) => {
 
   useEffect(() => {
     setMounted(true);
+    setDarkMode(true);
     const storageValue = localStorage.getItem("darkMode");
     if (storageValue) {
       setDarkMode(JSON.parse(storageValue));
